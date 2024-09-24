@@ -3,7 +3,7 @@ using Tyuiu.RotachAO.Sprint1.Task0.V13.Lib;
 namespace Tyuiu.RotachAO.Sprint1.Task0.V13.Test
 {
     [TestClass]
-    public class UnitTest1
+    public class DataServiceTest
     {
         [TestMethod]
         public void ValidExpression()

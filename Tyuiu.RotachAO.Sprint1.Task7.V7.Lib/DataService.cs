@@ -7,7 +7,7 @@ public class DataService : ISprint1Task7V7
     public double Calculate(double x, double y)
     {
         double res = (Math.Cos(x) / (Math.PI - 2 * (Math.Pow(y, x)))) + 16 * x * Math.Cos(x * y) - 2;
-        return res;
+        return Math.Round(res,3);
     }
 }
 

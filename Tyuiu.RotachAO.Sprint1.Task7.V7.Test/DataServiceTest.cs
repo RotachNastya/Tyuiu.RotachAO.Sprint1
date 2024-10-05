@@ -9,10 +9,10 @@ public class DataServiceTest
    public void ValidExpression()  
    {
         DataService ds = new DataService();
-        double x = 0;
-        double y = 1;
+        double x = 2;
+        double y = 4;
         var res = ds.Calculate(x, y);
-        Assert.AreEqual(-2, res);
+        Assert.AreEqual(-4,314, res);
     }
 } 
-} 
+

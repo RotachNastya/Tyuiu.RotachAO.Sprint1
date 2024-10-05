@@ -1,6 +1,5 @@
-using Tyuiu.RotachAO.Sprint1.Task6.V2.Lib;
-
-namespace Tyuiu.RotachAO.Sprint1.Task6.V2;
+﻿
+using Tyuiu.RotachAO.Sprint1.Task7.V7.Lib;
 
 class Program
 {
@@ -10,8 +9,8 @@ class Program
         Console.WriteLine("************************************************************************");
         Console.WriteLine("* Спринт #1                                                            *");
         Console.WriteLine("* Тема:                                                                *");
-        Console.WriteLine("* Задание #6                                                           *");
-        Console.WriteLine("* Вариант #2                                                           *");
+        Console.WriteLine("* Задание #7                                                           *");
+        Console.WriteLine("* Вариант #7                                                           *");
         Console.WriteLine("* Выполнил: Ротач Анастасия Олеговна  | ИИПб-24-1                      *");
         Console.WriteLine("************************************************************************");
         Console.WriteLine("* УСЛОВИЕ:                                                             *");
@@ -20,14 +19,16 @@ class Program
         Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                     *");
         Console.WriteLine("************************************************************************");
 
-        Console.WriteLine("Введите строку");
-        string k = Convert.ToString(Console.ReadLine()!);
+        Console.WriteLine("Введите переменную X:");
+        int x = int.Parse(Console.ReadLine()!);
+        Console.WriteLine("Введите переменную Y:");
+        int y = int.Parse(Console.ReadLine()!);
         DataService ds = new DataService();
-        bool res = ds.CheckHello(k);
         Console.WriteLine("************************************************************************");
         Console.WriteLine("* РЕЗУЛЬТАТ:                                                           *");
         Console.WriteLine("************************************************************************");
-        Console.WriteLine($"Ответ = {res}");
+        double res = ds.Calculate(x, y);
+        Console.WriteLine($"Ответ = {res} ");
         Console.ReadKey();
     }
 }

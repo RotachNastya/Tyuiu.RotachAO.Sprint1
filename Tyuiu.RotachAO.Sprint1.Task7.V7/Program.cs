@@ -2,7 +2,7 @@ using Tyuiu.RotachAO.Sprint1.Task7.V7.Lib;
  
 namespace Tyuiu.BarbashinAV.Sprint1.Task7.V7; 
  
-class Program 
+class Program
 { 
     static void Main(string[] args) 
     { 
